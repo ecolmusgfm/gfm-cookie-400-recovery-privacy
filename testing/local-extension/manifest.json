@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "GFM Cookie 400 Recovery Local Test",
+  "version": "0.1.0",
+  "description": "Local-only test version. Clears fake gfm_test_* cookies after a 400 response on 127.0.0.1.",
+  "permissions": [
+    "cookies",
+    "tabs",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
